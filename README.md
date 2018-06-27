@@ -1,7 +1,8 @@
 # Introduction
 
 Easily create admin dashboards for your Firebase powered apps. For example, you
-can create a merchant dashboard for uploading items on an e-commerce site.
+can create a merchant dashboard for uploading items on an e-commerce site which
+uses Firebase as the backend.
 
 ## Project Structure
 
