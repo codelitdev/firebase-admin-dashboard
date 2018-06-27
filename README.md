@@ -31,6 +31,10 @@ can create a merchant dashboard for uploading items on an e-commerce site.
 2.  Run the functions locally using:
     `firebase serve --only functions`.
 
+### Deploying
+
+Run `deploy.sh`.
+
 #### Help
 
 Please open a new issue in case you are facing some problem or write to me at
