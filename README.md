@@ -16,21 +16,41 @@ uses Firebase as the backend.
 ### Setup
 
 1.  Put your Firebase project's name in `.firebaserc`.
-2.  Set a secret key for JWT token on Firebase using
-    `firebase functions:config:set auth.secret="<YOUR_SECRET>"`.
+2.  Set a secret key for JWT token on Firebase.
+    ```sh
+    firebase functions:config:set auth.secret="<YOUR_SECRET>"
+    ```
 3.  For every admin user, run the npm script:
-    `yarn run passwdgen <username> <password>` and follow further instructions.
+    ```sh
+    yarn run passwdgen <username> <password>
+    ```
+    and follow further instructions.
 4.  In `dashboard/src/globals.js` file, set your local and production cloud
-    functions endpoints in API_URL. To get these values, run
-    `firebase serve --only functions` for local and `firebase deploy` for production.
+    functions endpoints in API_URL. To get these values, run:
+
+    for local
+
+    ```sh
+    firebase serve --only functions
+    ```
+
+    for production
+
+    ```sh
+    firebase deploy
+    ```
 
 ### Debugging
 
 1.  Get config for Firebase functions for running the functions locally. From
     functions folder, run:
-    `firebase functions:config:get > .runtimeconfig.json`.
+    ```sh
+    firebase functions:config:get > .runtimeconfig.json
+    ```
 2.  Run the functions locally using:
-    `firebase serve --only functions`.
+    ```sh
+    firebase serve --only functions
+    ```
 
 ### Deploying
 
