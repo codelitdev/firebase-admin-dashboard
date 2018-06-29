@@ -1,4 +1,4 @@
-# Introduction
+# Starter Project For Building Admin Dashboards For Firebase Apps
 
 Easily create admin dashboards for your Firebase powered apps. For example, you
 can create a merchant dashboard for uploading items on an e-commerce site which
@@ -42,12 +42,12 @@ uses Firebase as the backend.
 
 ### Debugging
 
-1.  Get config for Firebase functions for running the functions locally. From
-    functions folder, run:
+1.  Get a copy of Firebase environment variables set on the server, for running the functions locally. From
+    `functions` folder, run
     ```sh
     firebase functions:config:get > .runtimeconfig.json
     ```
-2.  Run the functions locally using:
+2.  Run the functions locally
     ```sh
     firebase serve --only functions
     ```
