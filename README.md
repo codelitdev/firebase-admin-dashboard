@@ -20,12 +20,20 @@ uses Firebase as the backend.
     ```sh
     firebase functions:config:set auth.secret="<YOUR_SECRET>"
     ```
-3.  For every admin user, run the npm script from `functions` folder:
+3.  Cd to `functions` folder and run
+    ```sh
+    yarn install
+    ```
+4.  For every admin user, run the npm script
     ```sh
     yarn run passwdgen <username> <password>
     ```
     and follow further instructions.
-4.  In `dashboard/src/globals.js` file, set your local and production cloud
+5.  Cd to `dashboard` folder and run
+    ```sh
+    yarn install
+    ```
+6.  In `dashboard/src/globals.js` file, set your local and production cloud
     functions endpoints in API_URL. To get these values, run:
 
     for local
@@ -50,6 +58,10 @@ uses Firebase as the backend.
 2.  Run the functions locally
     ```sh
     firebase serve --only functions
+    ```
+3.  Cd to `dashboard` folder and run
+    ```sh
+    yarn start
     ```
 
 ### Deploying
