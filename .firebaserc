@@ -1,5 +1,5 @@
 {
-  "default": {
-    "project": "your-firebase-project-name"
+  "projects": {
+    "default": "your-project-name"
   }
 }
