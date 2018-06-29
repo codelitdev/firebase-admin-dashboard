@@ -6,7 +6,8 @@ export default class Dashboard extends React.Component {
     super();
 
     this.state = {
-      val: ""
+      val: "",
+      sampleWidgetResponse: "" // Response from sample widget
     };
 
     // this.initNetworkRequest = this.initNetworkRequest.bind(this);
@@ -52,7 +53,7 @@ export default class Dashboard extends React.Component {
       },
       // You can pass custom handlers which execute after getting response from
       // the server
-      response => alert(response.message)
+      response => this.setState({ sampleWidgetResponse: response.message })
     );
   }
 
@@ -71,6 +72,7 @@ export default class Dashboard extends React.Component {
             onChange={e => this.setState({ val: e.target.value })}
           />
           <button onClick={this.sendPost}>Make request</button>
+          <span>{this.sampleWidgetResponse}</span>
         </section>
       </div>
     );
