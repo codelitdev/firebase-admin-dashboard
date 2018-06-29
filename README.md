@@ -50,16 +50,20 @@ uses Firebase as the backend.
 
 ### Debugging
 
-1.  Get a copy of Firebase environment variables set on the server, for running the functions locally. From
+1.  Download your project's service account key `.json` file and export it in your environment variable.
+    ```sh
+    set GOOGLE_APPLICATION_CREDENTIALS=<path_to_json_file>/serviceAccountKey.json
+    ```
+2.  Get a copy of Firebase environment variables set on the server, for running the functions locally. From
     `functions` folder, run
     ```sh
     firebase functions:config:get > .runtimeconfig.json
     ```
-2.  Run the functions locally
+3.  Run the functions locally
     ```sh
     firebase serve --only functions
     ```
-3.  Cd to `dashboard` folder and run
+4.  Cd to `dashboard` folder and run
     ```sh
     yarn start
     ```
