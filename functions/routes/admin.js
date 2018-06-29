@@ -21,7 +21,9 @@ router.get("/", (req, res) =>
 
 router.post("/", (req, res) => {
   return res.status(200).send({
-    message: "Welcome to the dashboard via POST"
+    message: req.body.value
+      ? `Response from server: ${req.body.value}`
+      : "Welcome to the dashboard via POST"
   });
 });
 
