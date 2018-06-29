@@ -72,7 +72,7 @@ export default class Dashboard extends React.Component {
             onChange={e => this.setState({ val: e.target.value })}
           />
           <button onClick={this.sendPost}>Make request</button>
-          <span>{this.sampleWidgetResponse}</span>
+          <p>{this.state.sampleWidgetResponse}</p>
         </section>
       </div>
     );
