@@ -30,6 +30,10 @@ export default class LoginScreen extends React.Component {
         } else {
           alert(res.message);
         }
+      })
+      .catch(err => {
+        alert("Error encountered! See console for details.");
+        console.log(err);
       });
   }
 
