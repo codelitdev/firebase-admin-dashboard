@@ -20,7 +20,7 @@ uses Firebase as the backend.
     ```sh
     firebase functions:config:set auth.secret="<YOUR_SECRET>"
     ```
-3.  For every admin user, run the npm script:
+3.  For every admin user, run the npm script from `functions` folder:
     ```sh
     yarn run passwdgen <username> <password>
     ```
