@@ -6,6 +6,7 @@ export default class Dashboard extends React.Component {
     super();
 
     this.state = {
+      networkrequest: false,
       val: "",
       sampleWidgetResponse: "" // Response from sample widget
     };
