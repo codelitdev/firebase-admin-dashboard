@@ -52,12 +52,16 @@ uses Firebase as the backend.
 
 1.  Download your project's service account key `.json` file and export it in your environment variable.
     ```sh
-    set GOOGLE_APPLICATION_CREDENTIALS=<path_to_json_file>/serviceAccountKey.json
+    export GOOGLE_APPLICATION_CREDENTIALS=<path_to_json_file>/serviceAccountKey.json
     ```
 2.  Get a copy of Firebase environment variables set on the server, for running the functions locally. From
     `functions` folder, run
     ```sh
     firebase functions:config:get > .runtimeconfig.json
+    ```
+3.  Start Webpack in watch mode. This helps in reloading the cloud function on code change.
+    ```sh
+    yarn webpack
     ```
 3.  Run the functions locally
     ```sh

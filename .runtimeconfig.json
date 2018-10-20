@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "secret": "Kjke"
+  },
+  "users": {
+    "root": "$2a$08$I2sJgTejvhtLlWU.tyoPp.WfNwIur4Duh/quQi93U/Ppgfa9qfTsS"
+  }
+}

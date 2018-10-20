@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const login = require("./routes/login.js");
 const admin = require("./routes/admin.js");
+const functions = require("firebase-functions");
 
 // exports.helloWorld = functions.https.onRequest((request, response) => {
 //  response.send("Hello from Firebase!");
@@ -26,4 +27,5 @@ app.use(bodyParser.json());
 app.use("/login", login);
 app.use("/admin", admin);
 
-module.exports = app;
+// module.exports = app;
+exports.api = functions.https.onRequest(app);
