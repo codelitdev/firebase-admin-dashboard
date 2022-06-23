@@ -17,7 +17,7 @@
     "buildncopy": "yarn run build && cd ../ && rm -rf public && cp -R ./dashboard/build . && mv build public"
   },
   "devDependencies": {
-    "jsdom": "^11.11.0",
+    "jsdom": "^16.5.0",
     "react-test-renderer": "^16.4.0"
   }
 }
