@@ -17,7 +17,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "firebase-admin": "~5.12.1",
     "firebase-functions": "^1.0.3",
     "jsonwebtoken": "^8.2.1",
