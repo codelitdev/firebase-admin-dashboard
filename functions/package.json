@@ -20,7 +20,7 @@
     "express": "^4.16.3",
     "firebase-admin": "~5.12.1",
     "firebase-functions": "^1.0.3",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
     "tambola-generator": "^0.0.1"
   },
   "devDependencies": {
